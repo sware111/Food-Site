@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css">
+    <title>وبسایت آشپزی</title>
+</head>
+<body>
+    <header>
+        <h1>وبسایت آشپزی من</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" onclick="showSection('home')">خانه</a></li>
+                <li><a href="recipes.html" onclick="showSection('recipes')">دستورات غذا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="comments" class="section">
+        <h2>نظرات</h2>
+        <form id="commentForm">
+            <textarea id="comment" placeholder="نظرات خود را اینجا بنویسید..."></textarea>
+            <button type="submit">ارسال</button>
+        </form>
+        <div id="commentsList"></div>
+    </section>
+    <footer>
+        <p>&copy; 2023 وبسایت آشپزی من</p>
+    </footer>
+    <script src="food.js"></script>
+</body>
+</html>
